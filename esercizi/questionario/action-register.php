@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Risposte del Form</title>
+    <title>YOUR INFORMATION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
-        
         body {
             display: flex;
             justify-content: center;
@@ -18,73 +17,79 @@
             background-position: center;
             font-family: Arial, sans-serif;
             margin: 0;
-            font-family: Arial, sans-serif;
-    
+            font-family: 'Poppins', sans-serif;
         }
 
         .container {
-            width: 720px; /* Aumento della larghezza del container */
-            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 720px;
+            background: transparent;
             color: white;
             border-radius: 10px;
-            padding: 20px;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 30px 40px;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
         }
 
         .table {
-            background-color: transparent;
-            border-radius: 8px;
             margin-top: 20px;
-            border: none;
-            font-size: 18px; /* Aumento della dimensione del testo della tabella */
+            font-size: 18px;
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
         }
 
         tbody tr {
-            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         }
 
         tbody td {
             padding: 12px;
-            border: none; 
+            border: none;
+            text-transform: none;
         }
-        h2
-        {
+
+        th {
+            padding: 12px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h2 {
             color: white;
             text-align: center;
-            
+            font-size: 30px;
         }
-      
+
         h1 {
-    color: white;
-    text-align: center;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: calc(100% - 1200px); /* Larghezza del 100% - 60px (30px a sinistra e 30px a destra) */
-    margin: 0;
-}
-
-
-
-            
-   
+            color: white;
+            text-align: center;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: calc(100% - 1200px);
+            margin: 0; 
+        }
     </style>
 </head>
 
 <body>
     <h1>WELCOME</h1>
     <div class="container">
-    <h2> YOUR INFORMATION: </h2>
+        <h2>YOUR INFORMATION:</h2>
         <div class="table-responsive">
             <table class="table table-bordered table-hover">
                 <tbody>
