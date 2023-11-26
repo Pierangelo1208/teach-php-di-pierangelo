@@ -10,9 +10,6 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background: url('https://i.pinimg.com/originals/22/2f/fc/222ffcd7bd1dde07e2734093b24af380.jpg');
-      background-size: cover;
-      background-position: center;
       font-family: 'Poppins', sans-serif;
     }
 
@@ -58,6 +55,34 @@
     font-weight: 600;
     margin-top: 20px;
 }
+.animated-background {
+  height: 100%;
+  background-image: url('https://i.pinimg.com/originals/45/d0/79/45d0790c293e5dba3077f4ad0c4826c6.gif'); /* Aggiungi il percorso del tuo sfondo animato */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Definizione dell'animazione */
+@keyframes animazioneSfondo {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Applicazione dell'animazione allo sfondo */
+.animated-background {
+  animation: animazioneSfondo 10s linear infinite; /* Modifica la durata o lo stile dell'animazione come preferisci */
+}
   </style>
 </head>
 
@@ -92,11 +117,6 @@
         <input type="date" class="form-control" id="age" name="age">
       </div>
 
-      <div class="form-group">
-        <label for="bg-color">Background Color:</label>
-        <input type="color" class="form-control" id="bg-color" name="background color">  
-      </div>
-      
       <button type="submit" class="btn btn-primary">Submit</button>
 
     </form>
