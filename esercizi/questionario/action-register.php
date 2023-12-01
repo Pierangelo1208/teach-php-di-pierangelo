@@ -87,7 +87,12 @@
 </head>
 
 <body>
-    <h1>WELCOME</h1>
+    <?php
+        $welcomeMessage = isset($_GET['first name']) ? "Benvenuto " . htmlspecialchars($_GET['first name']) : "Benvenuto";
+    ?>
+
+    <h1><?php echo $welcomeMessage; ?></h1>
+
     <div class="container">
         <h2>YOUR INFORMATION:</h2>
         <div class="table-responsive">
