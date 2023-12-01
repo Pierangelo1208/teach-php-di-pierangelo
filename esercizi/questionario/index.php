@@ -66,6 +66,9 @@
 
     <h1>REGISTER</h1>
 
+
+
+
     <form action="./action-register.php">
       <div class="form-group">
         <label for="first name">First name:</label>
@@ -92,41 +95,6 @@
         <input type="password" class="form-control" id="password" name="password">
       </div>
 
-      <?php
-        
-        if (!isset($_SESSION['attempt'])) 
-        {
-          $_SESSION['attempt'] = 0;
-        }
-
-        $maxAttempts = 3; 
-
-        if ($_SERVER["REQUEST_METHOD"] == "POST") 
-        {
-          $password = $_POST['password'];
-        if ($password === 'info2023') 
-        {
-          header("Location: action-register.php");
-          exit();
-        } 
-        else
-        {
-          $_SESSION['attempt']++;
-          if ($_SESSION['attempt'] >= $maxAttempts) 
-          {
-            header("Location: index.php");
-            exit();
-          }
-          else 
-          {
-            header("Location: index.php?errore=password");
-            exit();
-          }
-        }
-        }
-        ?>
-
-
       <div class="form-group">
         <label for="age">Age:</label>
         <input type="date" class="form-control" id="age" name="age">
@@ -145,3 +113,6 @@
 </body>
 
 </html>
+
+
+
