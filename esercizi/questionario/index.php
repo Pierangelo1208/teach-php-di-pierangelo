@@ -71,8 +71,8 @@
 
     <form action="./action-register.php">
       <div class="form-group">
-        <label for="first name">First name:</label>
-        <input type="text" class="form-control" id="first name" name="first name">
+        <label for="nome">First name:</label>
+        <input type="text" class="form-control" id="nome" name="nome">
       </div>
 
       <div class="form-group">
