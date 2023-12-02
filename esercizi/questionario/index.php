@@ -76,13 +76,13 @@
       </div>
 
       <div class="form-group">
-        <label for="last name">Last name:</label>
-        <input type="text" class="form-control" id="last name" name="last name">
+        <label for="cognome">Last name:</label>
+        <input type="text" class="form-control" id="cognome" name="cognome">
       </div>
 
       <div class="form-group">
-        <label for="favorite sport">Favorite sport:</label>
-        <input type="text" class="form-control" id="favorite sport" name="favorite sport">
+        <label for="sport">Favorite sport:</label>
+        <input type="text" class="form-control" id="sport" name="sport">
       </div>
 
       <div class="form-group">
@@ -102,7 +102,7 @@
 
       <div class="form-group">
         <label for="bg-color">Background Color:</label>
-        <input type="color" class="form-control" id="bg-color" name="background color">  
+        <input type="color" class="form-control" id="bg-color" name="bg-color">  
       </div>
       
       <button type="submit" class="btn btn-primary">Submit</button>

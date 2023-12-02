@@ -37,7 +37,7 @@ if (isset($_GET['password']) && $_GET['password'] === $password) {
             align-items: center;
             text-align: center;
             width: 720px;
-            background: transparent;
+            background-color : <?php echo $sfondo; ?>;
             color: white;
             border-radius: 10px;
             padding: 30px 40px;
